@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe 生成活动文件",
+			"command": "F:/mingw64/bin/g++.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"-fexec-charset=GBK",   // 处理mingw中文编码问题
+                "-finput-charset=UTF-8",// 处理mingw中文编码问题，没有这俩中文显示会乱码
+				"-o",
+				"${fileDirname}\\exe\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				//"cwd": "F:/mingw64/bin"
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "编译器: F:/mingw64/bin/g++.exe"
+		}
+	]
+}
