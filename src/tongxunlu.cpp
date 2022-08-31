@@ -54,6 +54,11 @@ void searchPerson(Addressbooks *abs);
 // 清空联系人
 void clearPerson(Addressbooks *abs);
 
+/**
+ * 通讯录小功能
+ * 
+ * @return int 
+ */
 int tongxunlu()
 {
     // 创建通讯录的结构体变量
