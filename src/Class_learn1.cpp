@@ -21,8 +21,8 @@ public:
 
 /**
  * 第一次学习类
- * 
- * @return int 
+ *
+ * @return int
  */
 int main()
 {
